@@ -1,0 +1,128 @@
+/*Core Styles*/
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    max-width: 5000px;
+}
+
+body {
+    background: white;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*Top Container*/
+
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    padding-bottom: 2em;
+}
+
+.showcase h1 {
+    font-size: 3.5vh;
+}
+
+.showcase p {
+    font-size: 2.2vh;
+}
+
+
+/*Boxes*/
+
+.boxes {
+    padding: 3em;
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: none;
+    grid-row-gap: none;
+    position: relative;
+}
+
+.box1 {
+    display: flex;
+    background: black;
+    z-index: 0;
+    backface-visibility: hidden;
+}
+
+.box2 {
+    display: flex;
+}
+
+.box3 {
+    display: flex;
+}
+
+.box4 {
+    display: flex;
+}
+
+.location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90, 0, 10, 0.4);
+    color: white;
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes:hover .imgg {
+    /* Add the blur effect */
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    opacity: 0.2;
+    transition: opacity 0.2s ease-in;
+    z-index: 0;
+}
+
+.boxes:hover .location-title {
+    opacity: 1;
+}
+
+.bt1 {
+    display: flex;
+    opacity: 0;
+    color: black;
+    font-size: 20px;
+}
+
+.box1:hover .bt1 {
+    opacity: 1;
+}
+
+
+/*Make it responsive*/
+
+@media screen and (max-width: 1024px) {
+    .nl {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .boxes {
+        grid-template-columns: 1fr;
+    }
+    .top-container {
+        margin-bottom: -5em;
+    }
+}
