@@ -1,19 +1,15 @@
-           /*Core Styles*/
-
-           html {
+        /*Core Styles*/
+        html {
             box-sizing: border-box;
             font-family: 'Open Sans', sans-serif;
             background-color:#FEFEFE;
            }  
-
-           body { touch-action: none; }     
 
         img{
             width: 100%;
             height: 100%;
         }
 
-       
         h1{
             font-size:5.45144804088586vh;
             line-height: 4.770017035775128vh;
@@ -39,16 +35,44 @@
         .ii{
             font-style: italic;
             font-size:3.189097103918228vh;
-        }       
+
+        }
+
        
 
-        /*Title*/    
-       .top-title{
-        margin-top: 50px;
-           }
+       
+        /*Parallax(Bring the background image)*/
+        .parallax{
+            background-image: url("image/Mockups/Track/Track-Main-Header.png");
+
+        }
+
+        /*Properties for the content*/
+        .text-box i{
+            margin-top: 50px;
+            display: flex;
+            text-align: center;
+            font-size: 14pt;
+            margin-bottom: 50px;
+        }
+
+        .space{
+            margin-bottom: 150px;
+        }
+
+        
+
+        .space li{
+
+            font-size:  2.385008517887564vh;
+            line-height:  6.814310051107325vh;
+            color: #333333;
+            opacity: 90%;
+
+        }
+
        
         /*Grid*/    
-
         .grid-container {
                 display: grid;
  
@@ -65,51 +89,28 @@
                 margin-bottom:3em;
 
 
-            }
+        }
 
             
+            
+        .grid-container2 {
+
+            display: grid;
+            position: relative;
+      
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 0.5em;
+            grid-row-gap: 0.5em;
+
+            margin-top: 50px;
+            margin-bottom: 50px; 
+
+        }
+
+  
           
-
-            .mockups {
-                padding-top: -120px;
-                gap: 200px;
-
-            }
-
-            .links2 {
-                display: flex;
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                width: 100%;
-                height: 100%;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 30px;
-            }
-
-            .links2 li {
-                list-style: none;
-            }
-
-            .links2 a {
-                display: block;
-                padding: 1em;
-                font-size: 16px;
-                color: #333333;
-                text-decoration: none;
-                opacity: 0.8;
-            }
-
-            .links2 a:hover{
-                color: #093F8E;
-                font-weight: 500;
-
-            }
-
-            /*Desktop Version*/
-            @media screen and (min-width: 1024px) {
-
+        /*Desktop Version*/
+        @media screen and (min-width: 1024px) {
                 .main{
 
                     margin-left: 35.77512776831346vh;
@@ -118,12 +119,7 @@
              
                 /*Parallax*/     
                 .parallax {
-                /* The image used */
-                background-image: url("image/Mockups/Zetotec/Zetotec-Banner.png");
-    
-                /* Set a specific height */
                 
-                  
                 /* Create the parallax scrolling effect */
                 width:auto  ;                
                 background-attachment: fixed;
@@ -133,7 +129,6 @@
                 background-size: cover;
                 position: relative;
                 }
-
               
                 .cp{
                     width: auto;
@@ -154,65 +149,66 @@
                 }      
             }   
 
-          /*QHD Version*/
-          @media screen and (min-width: 2000px) {
-
-            .main{
-                width: 2000px;
-                position: relative;
-                align-items: center;
-                margin-left: auto;
-                margin-right: auto;
-                
-            }
-
-            .parallax{
-                background-position-x: 0px;
-                background-position-y: 100px;
-            }
-
-
-            .cp{
-            margin-top: -50px;
-            width:1920px;
-            }
-
-            .caption{
-                margin-left:0px;
-                margin-top: -50px;
-                padding:0em;
-
-
-            }
-
-
-
-        }
-
-         /*4K Version*/
-        @media screen and (min-width: 3000px) {
-                .cp{
-                margin-top: 50px;
-                
-                }
-
-                .parallax{
-                    background-position-y: 200px;
-                }
+            /*QHD Version*/
+            @media screen and (min-width: 2000px) {
 
                 .main{
-                    width: 3000px;
+                    width: 2000px;
                     position: relative;
                     align-items: center;
                     margin-left: auto;
                     margin-right: auto;
+                    
+                }
+
+                .parallax{
+                    background-position-x: 0px;
+                    background-position-y: 100px;
+                }
+
+
+                .cp{
+                margin-top: -50px;
+                width:1920px;
+                }
+
+                .caption{
+                    margin-left:0px;
+                    margin-top: -50px;
+                    padding:0em;
+
 
                 }
-        }
-
-    
 
 
+
+            }
+
+             /*4K Version*/
+            @media screen and (min-width: 3000px) {
+                    .cp{
+                    margin-top: 50px;
+                    
+                    }
+
+                    .parallax{
+                        background-position-y: 200px;
+                    }
+
+                    .main{
+                        width: 3000px;
+                        position: relative;
+                        align-items: center;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                    }
+            }
+
+
+
+
+            /*Mobile and Tablet Version*/
             @media screen and (max-width: 1023px) {
 
                 .main{
@@ -220,8 +216,8 @@
                     padding: 3em;
                 }
 
-                 .parallax{
-                    background-image: url("image/Mockups/Zetotec/Zetotec-Banner.png");
+                .parallax{
+                   
                   
                     /* Set a specific height */
                     width:auto  ;                
@@ -231,26 +227,24 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     position: relative;
-            }       
+                }
 
             .cp{
-           
+            
                 height: 400px;
                 margin-left:auto;
                 margin-right:auto;
                 
-                }
-            .main{
-                margin-left: 0;   
             }
-    
+            
                 .grid-container {
                     grid-template-columns: 1fr;
                 }
 
                 .grid-container2{
-                    grid-template-columns: 1fr;       
-                }
+                    grid-template-columns: 1fr;
 
+                    
+                }
             }
         
