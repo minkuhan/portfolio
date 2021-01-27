@@ -16,17 +16,21 @@
         
         h1{
             font-size:5.45144804088586vh;
-            line-height: 4.770017035775128vh;
+            line-height: 10.770017035775128vh;
             color: #333333;
         }
 
         h2{
             font-size:4.088586030664395vh;
+            line-height: 4.770017035775128vh;
+
             color: #093F8E;
         }
 
         h3 {
             font-size:3.189097103918228vh;
+            line-height: 6.40017035775128vh;
+
             color: #093F8E;
         }     
  
@@ -51,25 +55,18 @@
                 /*Important*/
                 
                 grid-template-columns: 1fr 1fr;
-                grid-column-gap: 0.5em;
-                grid-row-gap: 0.5em;
+                grid-column-gap: 2.5em;
+                grid-row-gap: 2.5em;
  
                 /*Important
                 padding-top: 105px;
                 
                 */
 
-                margin-bottom:3em;
 
             }
 
-            .grid-container .text-box1  {
-                width: auto;
-                height: auto;
-                border: red 5pt solid;
-
-
-            }
+            
 
             .links2 {
                 display: flex;
@@ -115,14 +112,12 @@
                 /*Parallax*/     
                 .parallax {
                 /* The image used */
-                background-image: url("image/Mockups/Red Automotive/Red-Automotive-Banner.jpg");
+                background-image: url("image/Illustrations/profile\ pic.jpg");
     
                   
                 /* Create the parallax scrolling effect */
                 width:auto  ;
-                background-attachment: fixed;
                 background-position-y: center;
-                background-position-x: 100px;
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: relative;
@@ -132,14 +127,12 @@
                 .cp{
                     width: auto;
                     height: 105vh;
-                    margin-left:auto;
-                    margin-right:auto;
-                    margin-top:-25px;
+                    
+
                 }
 
                 .caption {       
                 position: relative;
-                margin-left:250px;
                 text-align: left;
                 color: white;
                }
@@ -157,40 +150,41 @@
             align-items: center;
             margin-left: auto;
             margin-right: auto;
-        }
+            }
         
         .parallax{
         background-position-x: 0px;
         background-position-y: 100px;
-    }
+        }
 
 
-    .cp{
-    margin-top: -50px;
-    width:1920px;
-    }
-
-    .caption{
+        .cp{
+        margin-top: -50px;
+        width:1920px;
+        }
+        
+        .caption{
         margin-left:0px;
         margin-top: -50px;
         padding:0em;
+        }
+
+        .grid-container{
+            grid-template-columns: 1fr;
+        }
 
 
     }
 
 
-
-}
-
-
-@media screen and (min-width: 3000px) {
+        @media screen and (min-width: 3000px) {
         .cp{
         margin-top: 50px;
         
         }
 
         .parallax{
-            background-position-y: 200px;
+            background-position-y: 5vh ;
         }
 
         .main{
@@ -199,7 +193,11 @@
             align-items: center;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 5vh;
+        }
 
+        .grid-container{
+            grid-template-columns: 1fr;
         }
 
 
@@ -212,10 +210,12 @@
                 .main{
                     margin-left: 0;
                     padding: 3em;
+                    margin-top:10vh;
+
                 }
 
                 .parallax{
-                    background-image: url("image/Mockups/Red Automotive/Red-Automotive-Banner.jpg");
+                    background-image: url("image/Illustrations/profile\ pic.jpg");
                   
                     /* Set a specific height */
                     background-attachment:none;
@@ -242,9 +242,7 @@
 
                
 
-                nav .links li a{
-                    color: #333333;
-                }
+            
             }
 
           
