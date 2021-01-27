@@ -1,12 +1,10 @@
            /*Core Styles*/
 
-           html {
+        html {
             box-sizing: border-box;
             font-family: 'Open Sans', sans-serif;
             background-color:#FEFEFE;
            }  
-
-           body { touch-action: none; }     
 
         img{
             width: 100%;
@@ -39,16 +37,85 @@
         .ii{
             font-style: italic;
             font-size:3.189097103918228vh;
-        }       
-       
+
+        }
+
+      
 
         /*Title*/    
        .top-title{
         margin-top: 50px;
-           }
-       
-        /*Grid*/    
+    }
 
+
+    button .display-left{
+
+        display: absolute;
+        margin-left:400px;
+
+        
+
+
+    }
+    .mySlides {
+        display:none;
+    }
+
+
+
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 2.72572402044293vh;
+    margin-top: -3.7478705281090288vh;
+    columns: #333333;
+    font-weight:600;
+    font-size: 12vh;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    opacity: 0.5;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background: white;
+    opacity: 1;  
+  }
+  
+  
+
+    .dot {
+        cursor: pointer;
+        height:3.4071550255536627vh;
+        width: 3.4071550255536627vh;
+        margin: 0 0.34071550255536626vh;
+        background-color: #89B6A5;
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 3.4071550255536627vh;
+      }    
+
+      .active, .dot:hover {
+        background-color: #F79256;
+      }
+
+    .infographics img{
+        width: 100%;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+
+        /*Grid*/    
         .grid-container {
                 display: grid;
  
@@ -58,23 +125,15 @@
                 grid-column-gap: 0.5em;
                 grid-row-gap: 0.5em;
  
-                /*Important
-                padding-top: 105px;
-                */
-
-                margin-bottom:3em;
-
-
             }
 
-            
-          
-
-            .mockups {
-                padding-top: -120px;
-                gap: 200px;
-
+            .spacing{
+                margin-bottom: 25.55366269165247vh;
             }
+    
+
+
+       
 
             .links2 {
                 display: flex;
@@ -107,6 +166,14 @@
 
             }
 
+            /* Slideshow container */
+            .slideshow-container {
+                width: 100%;
+                 position: relative;
+            }
+
+
+
             /*Desktop Version*/
             @media screen and (min-width: 1024px) {
 
@@ -119,10 +186,7 @@
                 /*Parallax*/     
                 .parallax {
                 /* The image used */
-                background-image: url("image/Mockups/Zetotec/Zetotec-Banner.png");
-    
-                /* Set a specific height */
-                
+                background-image: url("image/Mockups/Trusted Clothes/Trusted-Clothes-Main-Header.png");               
                   
                 /* Create the parallax scrolling effect */
                 width:auto  ;                
@@ -133,7 +197,6 @@
                 background-size: cover;
                 position: relative;
                 }
-
               
                 .cp{
                     width: auto;
@@ -149,48 +212,47 @@
                 text-align: left;
                 color: white;
                }
+
                 .caption p {
                     color:white;
                 }      
+
+                    
             }   
 
-          /*QHD Version*/
-          @media screen and (min-width: 2000px) {
+            @media screen and (min-width: 2000px) {
 
-            .main{
-                width: 2000px;
-                position: relative;
-                align-items: center;
-                margin-left: auto;
-                margin-right: auto;
-                
+                .main{
+                    width: 2000px;
+                    position: relative;
+                    align-items: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    
+                }
+
+                .parallax{
+                    background-position-x: 0px;
+                    background-position-y: 100px;
+                }
+
+
+                .cp{
+                    margin-top: -50px;
+                    width:1920px;
+                }
+
+                .caption{
+                    margin-left:0px;
+                    margin-top: 150px;
+                    padding:0em;
+                }
+
             }
 
-            .parallax{
-                background-position-x: 0px;
-                background-position-y: 100px;
-            }
 
-
-            .cp{
-            margin-top: -50px;
-            width:1920px;
-            }
-
-            .caption{
-                margin-left:0px;
-                margin-top: -50px;
-                padding:0em;
-
-
-            }
-
-
-
-        }
-
-         /*4K Version*/
-        @media screen and (min-width: 3000px) {
+            /*4K Version*/
+            @media screen and (min-width: 3000px) {
                 .cp{
                 margin-top: 50px;
                 
@@ -215,13 +277,16 @@
 
             @media screen and (max-width: 1023px) {
 
+                
                 .main{
                     margin-left: 0;
                     padding: 3em;
                 }
 
+            
+
                  .parallax{
-                    background-image: url("image/Mockups/Zetotec/Zetotec-Banner.png");
+                    background-image: url("image/Mockups/Trusted Clothes/Trusted-Clothes-Main-Header.png");
                   
                     /* Set a specific height */
                     width:auto  ;                
@@ -234,22 +299,20 @@
             }       
 
             .cp{
-           
                 height: 400px;
                 margin-left:auto;
                 margin-right:auto;
                 
                 }
-            .main{
-                margin-left: 0;   
-            }
     
                 .grid-container {
                     grid-template-columns: 1fr;
                 }
 
                 .grid-container2{
-                    grid-template-columns: 1fr;       
+                    grid-template-columns: 1fr;
+
+                    
                 }
 
             }
