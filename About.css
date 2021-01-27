@@ -99,6 +99,13 @@
 
             }
 
+            .parallax {
+                background-image: url("image/Illustrations/profile\ pic.jpg");
+                background-position: center;
+             
+            }
+
+
             /*Desktop Version*/
             @media screen and (min-width: 1024px) {
 
@@ -110,14 +117,8 @@
              
              
                 /*Parallax*/     
-                .parallax {
-                /* The image used */
-                background-image: url("image/Illustrations/profile\ pic.jpg");
-    
-                  
-                /* Create the parallax scrolling effect */
+                .parallax { 
                 width:auto  ;
-                background-position-y: center;
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: relative;
