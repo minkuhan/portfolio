@@ -43,7 +43,7 @@
        
         /*Parallax(Bring the background image)*/
         .parallax{
-            background-image: url("image/Mockups/Track/Track-Main-Header.png");
+        background-image: url("image/Mockups/Zetotec/Zetotec-Banner.png");
 
         }
 
@@ -92,22 +92,7 @@
         }
 
             
-            
-        .grid-container2 {
-
-            display: grid;
-            position: relative;
-      
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-column-gap: 0.5em;
-            grid-row-gap: 0.5em;
-
-            margin-top: 50px;
-            margin-bottom: 50px; 
-
-        }
-
-  
+         
           
         /*Desktop Version*/
         @media screen and (min-width: 1024px) {
