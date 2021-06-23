@@ -24,9 +24,10 @@
            font-size:  2.385008517887564vh;
             
             margin: 4px 2px;
-            width:50%;
+            width:40vh;
+            height: 8vh;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 1.5vh;
           }
 
           .button1 {
@@ -76,6 +77,10 @@
             font-size:3.189097103918228vh;
 
         }
+
+        .linkedin  {
+            color: blue
+        }
        
         /*Grid*/    
 
@@ -84,7 +89,7 @@
  
                 /*Important*/
                 
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 45% 55%;
                 grid-column-gap: 2.5em;
                 grid-row-gap: 2.5em;
  
@@ -152,7 +157,6 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: relative;
-                margin-top: 10.5vh;
                 }
 
               
@@ -170,7 +174,10 @@
                }
                 .caption p {
                     color:white;
-                }      
+                }    
+
+                
+                  
             }   
             
             /*QHD Version*/
@@ -280,4 +287,4 @@
           
         
 
-    
+        
