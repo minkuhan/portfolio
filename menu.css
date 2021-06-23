@@ -1,14 +1,18 @@
 
+
+html{
+	scroll-behavior: smooth;
+
+}
 body {
     margin: 0;
-  }
+ }
 
   .brand{
 	width: 8.517887563884157vh;
     height:  8.517887563884157vh;
     justify-content: center;
     padding: 2.72572402044293vh;
-
 }
 
 
@@ -101,6 +105,76 @@ nav .icon-burger {
 }
 
 
+  /*Scroll Down*/          
+  .scroll-down{
+	height: 50px;
+	width: 20px;
+	border: 2px solid;
+	border-color: black;
+	position: absolute;
+   left:50%;
+   bottom: 30px;
+	margin-top: 80vh;
+	border-radius: 5vh;
+	cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after{
+	content: '';
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	border: 2px solid black;
+
+	height: 5px;
+	width: 5px;
+
+	transform: translate(-50%, -50%) rotate(45deg);
+	border-top: transparent;
+	border-left: transparent;
+	animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after{
+	top: 30%;
+	animation-delay: .25s;
+}
+
+@keyframes scroll-down{
+	0%{
+	opacity: 0;
+	}
+	30%{
+		opacity: 1;
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		top: 90%;
+	}
+
+}  
+
+
+
+
+	@media screen and (min-width:1024px) {
+
+		section  {
+			padding-top: 20px;
+
+		}
+
+	}
+		
+	
+
+
+
+
 	@media screen and (max-width: 1023px) {
     
     
@@ -168,6 +242,11 @@ nav .icon-burger {
 		}
 		nav :checked ~ .icon-burger .line:nth-child(2) {
 			opacity: 0;
+		}
+
+
+		.scroll-down{
+			display: none;
 		}
 	} 
 	
@@ -241,6 +320,9 @@ nav .icon-burger {
 	nav :checked ~ .icon-burger .line:nth-child(2) {
         opacity: 0;
     }
+
+
+	.scroll-down{
+		display:none;
+		}
 } 
- 
- 
