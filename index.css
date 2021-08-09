@@ -8,7 +8,8 @@
                box-sizing: border-box;
                font-family: 'Open Sans', sans-serif;
                text-align: center;
-               background-color: ;
+               scroll-behavior: smooth;
+
            }
            
                    body {
